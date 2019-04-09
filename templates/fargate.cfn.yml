@@ -627,7 +627,7 @@ Resources:
   DefaultLogGroup:
     Type: AWS::Logs::LogGroup
     Properties:
-      LogGroupName: !Sub /fargate/${AWS::StackName}/${GitSourceRepo}/${GitBranch}/${EnvironmentName}
+      LogGroupName: !Sub /fargate/${AWS::StackName}/${GitBranch}/${EnvironmentName}
       RetentionInDays: !Ref ContainerLogRetentionInDays
 
   DefaultTaskRole:
